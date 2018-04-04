@@ -1,0 +1,11 @@
+diff -uNr cppzmq.orig/CMakeLists.txt cppzmq/CMakeLists.txt
+--- cppzmq.orig/CMakeLists.txt	2018-04-04 15:41:03.964474998 +0300
++++ cppzmq/CMakeLists.txt	2018-04-04 15:46:29.822628738 +0300
+@@ -76,5 +76,5 @@
+ install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/libzmq-pkg-config/FindZeroMQ.cmake
+               DESTINATION ${CPPZMQ_CMAKECONFIG_INSTALL_DIR}/libzmq-pkg-config)
+ 
+-enable_testing()
+-add_subdirectory(tests)
++# enable_testing()
++# add_subdirectory(tests)

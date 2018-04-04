@@ -1,0 +1,21 @@
+diff -uNr cppzmq.orig/CMakeLists.txt cppzmq/CMakeLists.txt
+--- cppzmq.orig/CMakeLists.txt	2018-04-04 15:41:03.964474998 +0300
++++ cppzmq/CMakeLists.txt	2018-04-04 15:43:12.192961455 +0300
+@@ -31,7 +31,7 @@
+     set (pkg_config_defines "")
+ ENDIF (ENABLE_DRAFTS)
+ 
+-message(STATUS "cppzmq v${CPPZMQ_VERSION}")
++message(STATUS "cppzmq v${cppzmq_VERSION}")
+ 
+ set(CPPZMQ_HEADERS
+     zmq.hpp
+@@ -65,7 +65,7 @@
+                               "${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}Config.cmake"
+                               INSTALL_DESTINATION ${CPPZMQ_CMAKECONFIG_INSTALL_DIR})
+ write_basic_package_version_file(${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}ConfigVersion.cmake
+-                                 VERSION ${CPPZMQ_VERSION}}
++                                 VERSION ${cppzmq_VERSION}
+                                  COMPATIBILITY AnyNewerVersion)
+ install(EXPORT ${PROJECT_NAME}-targets
+         FILE ${PROJECT_NAME}Targets.cmake
